@@ -1,6 +1,8 @@
 import React from "react";
 
-const BlogPage = () => {
+const BlogPage = ({params}) => {
+  console.log("params :",params);
+  
   const cards = Array.from({ length: 6 }, (_, index) => ({
     id: index + 1,
     img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644",
@@ -16,7 +18,7 @@ const BlogPage = () => {
           <header className="mx-auto max-w-screen-xl pt-28 text-center">
             <p className="text-gray-500">Published April 4, 2022</p>
             <h1 className="mt-2 text-3xl font-bold text-gray-900 sm:text-5xl">
-              7 rules of effective marketing
+              Post Number : 
             </h1>
             <p className="mt-6 text-lg text-gray-700">
               You're doing marketing the wrong way
@@ -65,9 +67,9 @@ const BlogPage = () => {
         </h2>
 
         <div className="mx-auto grid max-w-screen-lg justify-center px-4 sm:grid-cols-2 sm:gap-6 sm:px-8 md:grid-cols-3">
-          {cards.map((card) => (
+          {cards.map((card,index) => (
             <article
-              key={card.id}
+              key={index}
               className="mx-auto my-4 flex flex-col overflow-hidden rounded-lg border border-gray-300 bg-white text-gray-900 transition hover:translate-y-2 hover:shadow-lg"
             >
               <a href="#">

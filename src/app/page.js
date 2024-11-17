@@ -5,9 +5,7 @@ import Navbar from "@/Frontend/Navbar/Navbar";
 export default function Home() {
   return (
     <>
-    <Navbar />
     <Blogs />
-    <Footer />
     </>
   );
 }
