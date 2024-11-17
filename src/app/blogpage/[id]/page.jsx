@@ -12,8 +12,8 @@ const BlogPage = ({ params }) => {
   }));
 
   return (
-    <div>
-      <main className="bg-slate-50">
+    <div className="bg-slate-50">
+      <main>
         <article>
           <header className="mx-auto max-w-screen-xl pt-28 text-center ">
             <p className="text-gray-500">Published April 4, 2022</p>
@@ -60,13 +60,13 @@ const BlogPage = ({ params }) => {
 
       <aside
         aria-label="Related Articles"
-        className="mx-auto mt-10 max-w-screen-xl py-20"
+        className="mx-auto mt-10 max-w-screen-xl py-20 "
       >
         <h2 className="mb-8 text-center text-5xl font-bold text-gray-900">
           More Blogs
         </h2>
 
-        <div className="mx-auto grid max-w-screen-lg justify-center px-4 sm:grid-cols-2 sm:gap-6 sm:px-8 md:grid-cols-3">
+        <div className=" mx-auto grid max-w-screen-lg justify-center px-4 sm:grid-cols-2 sm:gap-6 sm:px-8 md:grid-cols-3">
           {cards.map((card,index) => (
             <article
               key={index}
