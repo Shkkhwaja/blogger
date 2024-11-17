@@ -55,7 +55,7 @@ const Blogs = () => {
   ];
 
   return (
-    <div className="p-4 font-[sans-serif]">
+    <div className="p-4 font-[sans-serif] bg-slate-50">
       <div className="max-w-6xl max-lg:max-w-3xl max-sm:max-w-sm mx-auto">
         <div className="max-w-md mx-auto">
           <h2 className="text-3xl font-extrabold text-gray-800 mb-12 text-center leading-10">
