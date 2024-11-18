@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from "../../../public/img/logo.png";
+import logo from "../../../../public/img/logo.png";
 
 const Navbar = () => {
   // State for toggling mobile navigation visibility
