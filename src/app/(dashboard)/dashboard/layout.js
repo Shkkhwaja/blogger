@@ -1,5 +1,7 @@
-import Sidebar from "@/components/Sidebar";
+import NavbarDashboard from "@/components/DashboardPages/NavbarDashboard/NavbarDashboard";
 import "../../globals.css";
+import HomeDashboard from "@/components/DashboardPages/HomeDashboard/HomeDashboard";
+import SidebarDashboard from "@/components/DashboardPages/SidebarDashboard/SidebarDashboard";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +13,8 @@ export default function DashboardRootLayout({ children }) {
     <html lang="en">
       <body className={` antialiased`}>
         <div className="flex">
-          <Sidebar />
+          <NavbarDashboard />
+          <SidebarDashboard />
           {children}
         </div>
       </body>
